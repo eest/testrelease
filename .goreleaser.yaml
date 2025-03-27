@@ -33,7 +33,9 @@ kos:
 nfpms:
   - maintainer: Drummer <drum-roll@example.com>
     license: BSD 2-Clause
-    description: some description
+    description: |
+      FooBar is the great foo and bar software.
+        And this can be in multiple lines!
     formats:
     - deb
     - rpm
