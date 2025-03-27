@@ -39,6 +39,7 @@ nfpms:
     vendor: "a vendor"
     homepage: "http://example.com"
     section: "misc"
+    changelog: "changelog.yml"
     formats:
     - deb
     - rpm

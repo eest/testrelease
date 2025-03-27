@@ -25,6 +25,18 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: stable
+      - name: Create changelog for nfpm
+        run: |
+          os=${{ runner.os }}
+          if [[ $os == "macOS" ]]; then
+            os="Darwin"
+          fi
+          arch=$(echo "${{ runner.arch }}" | tr '[:upper:]' '[:lower:]')
+          if [[ $arch == "x64" ]]; then
+            arch="x86_64"
+          fi
+          curl -fsL https://github.com/goreleaser/chglog/releases/download/v0.7.0/chglog_${os}_${arch}.tar.gz | tar xzf - -C /usr/local/bin chglog
+          chglog init
       # More assembly might be required: Docker logins, GPG, etc.
       # It all depends on your needs.
       - name: Run GoReleaser
