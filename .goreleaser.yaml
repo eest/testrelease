@@ -31,6 +31,7 @@ kos:
       - linux/arm64
 
 nfpms:
-  - formats:
+  - maintainer: Drummer <drum-roll@example.com>
+    formats:
     - deb
     - rpm
