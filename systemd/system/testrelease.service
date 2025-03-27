@@ -1,0 +1,13 @@
+[Unit]
+Description=some description
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=testrelease
+Group=testrelease
+ExecStart=/usr/bin/testrelease
+
+[Install]
+WantedBy=multi-user.target
