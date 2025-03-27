@@ -38,6 +38,7 @@ nfpms:
         And this can be in multiple lines!
     vendor: "a vendor"
     homepage: "http://example.com"
+    section: "misc"
     formats:
     - deb
     - rpm
