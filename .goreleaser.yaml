@@ -36,7 +36,5 @@ nfpms:
     - deb
     - rpm
     contents:
-    - src: ./testrelease
-      dst: /usr/bin/testrelease
     - src: ./systemd/system/testrelease.service
       dst: /usr/lib/systemd/system/testrelease.service
