@@ -36,6 +36,8 @@ nfpms:
     description: |
       FooBar is the great foo and bar software.
         And this can be in multiple lines!
+    vendor: "a vendor"
+    homepage: "http://example.com"
     formats:
     - deb
     - rpm
