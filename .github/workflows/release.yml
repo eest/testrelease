@@ -36,6 +36,7 @@ jobs:
             arch="x86_64"
           fi
           curl -fsL https://github.com/goreleaser/chglog/releases/download/v0.7.0/chglog_${os}_${arch}.tar.gz | tar xzf - -C /usr/local/bin chglog
+          cd dist
           chglog init
       # More assembly might be required: Docker logins, GPG, etc.
       # It all depends on your needs.
