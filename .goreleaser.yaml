@@ -32,6 +32,7 @@ kos:
 
 nfpms:
   - maintainer: Drummer <drum-roll@example.com>
+    license: BSD 2-Clause
     formats:
     - deb
     - rpm
