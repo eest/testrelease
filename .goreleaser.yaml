@@ -50,3 +50,8 @@ nfpms:
       packager: deb
       file_info:
         mode: 0644
+    - src: ./LICENSE
+      dst: /usr/share/doc/testrelease/copyright
+      packager: deb
+      file_info:
+        mode: 0644
