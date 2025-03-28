@@ -41,18 +41,7 @@ nfpms:
     section: "misc"
     changelog: "changelog.yml"
     formats:
-    - deb
     - rpm
     contents:
     - src: ./systemd/system/testrelease.service
       dst: /usr/lib/systemd/system/testrelease.service
-    - src: .lintian-overrides
-      dst: ./usr/share/lintian/overrides/testrelease
-      packager: deb
-      file_info:
-        mode: 0644
-    - src: ./LICENSE
-      dst: /usr/share/doc/testrelease/copyright
-      packager: deb
-      file_info:
-        mode: 0644
