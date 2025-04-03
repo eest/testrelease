@@ -45,3 +45,5 @@ nfpms:
     contents:
     - src: ./systemd/system/testrelease.service
       dst: /usr/lib/systemd/system/testrelease.service
+    - src: ./.nfpm/sysusers.conf
+      dst: /usr/lib/sysusers.d/testrelease.conf
